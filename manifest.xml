@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest schema-ver="1">
+	<guid>RSkoi.RimLightShader</guid>
+	<name>Rim Light Shader</name>
+	<version>0.1.0</version>
+	<author>RSkoi</author>
+	<description>Alpha-blended rim light shader</description>
+	<website></website>
+	<MaterialEditor>
+		<Shader Name="RSkoi/RimLightTess" AssetBundle="chara/shaders/rsrimlight.unity3d" Asset="asset_RimLightTess">
+			<Property Name="NormalMap" Type="Texture" />
+			<Property Name="NormalMapDetail" Type="Texture" />
+			<Property Name="DisplaceMask" Type="Texture" />
+			<Property Name="EmissionColor" Type="Color" />
+			<Property Name="RimColor" Type="Color" />
+			<Property Name="RimNormalSoft" Type="Float" Range="0,1" />
+			<Property Name="RimExponent" Type="Float" Range="0,4" />
+			<Property Name="RimRotateX" Type="Float" Range="0,6.283" />
+			<Property Name="RimRotateY" Type="Float" Range="0,6.283" />
+			<Property Name="RimRotateZ" Type="Float" Range="0,6.283" />
+			<Property Name="OffsetX" Type="Float" />
+			<Property Name="OffsetY" Type="Float" />
+			<Property Name="OffsetZ" Type="Float" />
+			<Property Name="FresnelClip" Type="Float" Range="0,1" />
+			<Property Name="Displace" Type="Float" Range="0,0.5" />
+		</Shader>
+		<Shader Name="RSkoi/RimLight" AssetBundle="chara/shaders/rsrimlight.unity3d" Asset="asset_RimLight">
+			<Property Name="NormalMap" Type="Texture" />
+			<Property Name="NormalMapDetail" Type="Texture" />
+			<Property Name="EmissionColor" Type="Color" />
+			<Property Name="RimColor" Type="Color" />
+			<Property Name="RimNormalSoft" Type="Float" Range="0,1" />
+			<Property Name="RimExponent" Type="Float" Range="0,4" />
+			<Property Name="RimRotateX" Type="Float" Range="0,6.283" />
+			<Property Name="RimRotateY" Type="Float" Range="0,6.283" />
+			<Property Name="RimRotateZ" Type="Float" Range="0,6.283" />
+			<Property Name="OffsetX" Type="Float" />
+			<Property Name="OffsetY" Type="Float" />
+			<Property Name="OffsetZ" Type="Float" />
+			<Property Name="FresnelClip" Type="Float" Range="0,1" />
+		</Shader>
+	</MaterialEditor>
+</manifest>
